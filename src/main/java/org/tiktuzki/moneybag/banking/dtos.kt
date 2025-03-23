@@ -24,43 +24,39 @@ open class CardDto(
 
 // TCB
 data class AccountDto(
-    val additions: Additions,
     val id: String,
-    val legalEntityIds: List<String>,
-    val name: String,
+//    val additions: Additions,
+//    val legalEntityIds: List<String>,
+//    val name: String,
     val BBAN: String, // account number
-    val currency: String,
+//    val currency: String,
     val productKindName: String,
-    val productTypeName: String,
-    val bankBranchCode: String,
-    val creditAccount: Boolean,
-    val debitAccount: Boolean,
-    val userPreferences: UserPreferences,
+//    val productTypeName: String,
+//    val bankBranchCode: String,
+//    val creditAccount: Boolean = false,
+//    val debitAccount: Boolean = false,
     val bookedBalance: Long, // available balance
     val availableBalance: Long, // available balance
-    val creditLimit: Long,
+    val creditLimit: Long?,
     val productId: String,
     val visible: Boolean,
-    val accountOpeningDate: String,
-    val accountHolderNames: String, // name
     val favorite: Boolean,
     val product: Product,
     val displayName: String,
-    val debitCards: List<Any>
+
+    // term deposit
+    val accountOpeningDate: String?,
+    val accountInterestRate: Float?,
+    val termNumber: Int?,
 )
 
-data class Additions(
-    val caWorkingBalance: String,
-    val maxAcctBalance: String,
-    val maxAccountType: String,
-    val caActualBalance: String,
-    val alias: String
-)
-
-data class UserPreferences(
-    val visible: Boolean,
-    val favorite: Boolean
-)
+//data class Additions(
+//    val caWorkingBalance: String,
+//    val maxAcctBalance: String,
+//    val maxAccountType: String,
+//    val caActualBalance: String,
+//    val alias: String
+//)
 
 data class Product(
     val externalId: String,
