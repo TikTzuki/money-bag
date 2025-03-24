@@ -65,7 +65,7 @@ class TCBAuthenticator(val userRepository: UserRepository) : BankAuthenticator {
         val client = OkHttpClient()
         val request = Request.Builder()
             .url("$TCB_IDENTITY_HOST/auth/realms/backbase/protocol/openid-connect/token")
-            .addHeader("accept", "application/json, text/plain, */*")
+//            .addHeader("accept", "application/json, text/plain, */*")
             .addHeader("content-type", "application/x-www-form-urlencoded")
             .post(
                 FormBody.Builder()

@@ -1,14 +1,13 @@
 package org.tiktuzki.moneybag.banking.tcb
 
+import com.fasterxml.jackson.core.type.TypeReference
+import com.fasterxml.jackson.databind.ObjectMapper
 import mu.KLogging
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.springframework.stereotype.Component
-import org.tiktuzki.moneybag.banking.BakingCard
-import org.tiktuzki.moneybag.banking.Bank
-import org.tiktuzki.moneybag.banking.BankingClient
-import org.tiktuzki.moneybag.banking.TokenCredential
+import org.tiktuzki.moneybag.banking.*
 import org.tiktuzki.moneybag.globalscheduler.GlobalScheduler
 import org.tiktuzki.moneybag.user.UserRepository
 import java.time.Duration
@@ -18,6 +17,7 @@ class TCBClientImpl(
     val globalScheduler: GlobalScheduler,
     val authenticator: TCBAuthenticator,
     val userRepository: UserRepository,
+    val mapper: ObjectMapper
 ) : BankingClient {
 
     override fun login(userId: String, username: String, password: String) {
@@ -65,18 +65,23 @@ class TCBClientImpl(
             .scheme("https")
             .host(REST_API_HOST)
             .addPathSegment(path)
-            .addQueryParameter("businessFunction", "Product%20Summary")
-            .addQueryParameter("resourceName", "Product%20Summary")
+            .addQueryParameter("businessFunction", "Product Summary")
+            .addQueryParameter("resourceName", "Product Summary")
             .addQueryParameter("privilege", "view")
-            .addQueryParameter("productKindName", "Current%20Account")
+//            .addQueryParameter("productKindName", "Current Account")
             .addQueryParameter("size", "1000000")
             .build()
         val request = Request.Builder()
             .url(url)
             .build()
+        val accountsTypeRef = object : TypeReference<List<AccountDto>>() {}
         client.newCall(request).execute()
             .use { response ->
-                response
+                if (!response.isSuccessful) {
+                    throw RuntimeException("Unexpected code $response")
+                }
+                val accounts = mapper.readValue(response.body!!.bytes(), accountsTypeRef)
+                logger.info { accounts }
             }
     }
 
