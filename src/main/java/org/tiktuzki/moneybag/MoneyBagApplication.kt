@@ -4,9 +4,9 @@ import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.stereotype.Component
-import org.tiktuzki.moneybag.banking.tcb.TCBClientImpl
-import org.tiktuzki.moneybag.user.User
+import org.tiktuzki.moneybag.user.UserDto
 import org.tiktuzki.moneybag.user.UserRepository
+import java.util.Currency
 
 @SpringBootApplication
 class MoneyBagApplication
@@ -21,6 +21,6 @@ class MyCommandLineRunner(
 ) : CommandLineRunner {
     override fun run(vararg args: String?) {
         val userId = "me"
-        userRepository.addUser(userId, User(userId))
+        userRepository.addUser(userId, UserDto(userId))
     }
 }

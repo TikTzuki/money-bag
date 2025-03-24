@@ -41,7 +41,7 @@ data class AccountDto(
     val productId: String,
     val visible: Boolean,
     val favorite: Boolean,
-    val product: Product,
+//    val product: Product,
     val displayName: String,
 
     // term deposit
@@ -58,12 +58,12 @@ data class AccountDto(
 //    val alias: String
 //)
 
-data class Product(
-    val externalId: String,
-    val externalTypeId: String,
-    val typeName: String,
-    val productKind: ProductKind
-)
+//data class Product(
+//    val externalId: String,
+//    val externalTypeId: String,
+//    val typeName: String,
+//    val productKind: ProductKind
+//)
 
 data class ProductKind(
     val id: Int,
