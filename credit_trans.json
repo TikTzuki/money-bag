@@ -1,0 +1,417 @@
+[
+  {
+    "id": "e4c0ce7495a57f150195c3bc8b535a61",
+    "arrangementId": "75998b5d-677e-45f7-901e-425f37622310",
+    "reference": "FT25083999098948\\BNK",
+    "description": "Thanh toan no the tin dung - So tien 1696119 VND - Ngay 23/03/2025",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "bookingDate": "2025-03-23",
+    "valueDate": "2025-03-23",
+    "creditDebitIndicator": "CRDT",
+    "transactionAmountCurrency": {
+      "amount": "1696119",
+      "currencyCode": "VND"
+    },
+    "counterPartyName": "TRAN PHAN THANH LONG",
+    "counterPartyAccountNumber": "19037346123011",
+    "counterPartyBankName": "Techcombank",
+    "runningBalance": 0,
+    "additions": {
+      "creditBank": "Techcombank",
+      "accountDebitName": "VND-TGTT-TRAN PHAN THANH LONG",
+      "externalId": "C-19737346123013-209027474679672.030001",
+      "debitBank": "Techcombank",
+      "accountNoOth": "0858267296",
+      "creditAcctName": "TRAN PHAN THANH LONG",
+      "debitAcctName": "TRAN PHAN THANH LONG",
+      "creditAcctNo": "19737346123013",
+      "additionalInfo": "{\"PAY.DETAILS\":\"Thanh toan no the tin dung - So*tien 1696119 VND - Ngay 23/03/2025\"}",
+      "debitAcctNo": "19037346123011",
+      "creditCate": "1601",
+      "debitCate": "1001",
+      "accountCreditName": "VND-VCR-TRAN PHAN THANH LONG"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-03-23T22:07:52+07:00",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af679581737901959373d8d54578",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5945701095",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 MOCA CREDIT",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-03-08",
+    "valueDate": "2025-03-08",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "47000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-03-08T10:44:45Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af679581737901959373d8d54577",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5943576888",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 MOCA CREDIT",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-03-07",
+    "valueDate": "2025-03-07",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "55000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-03-07T22:04:38Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af679581737901959373d8d54579",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5940588960",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 MOCA CREDIT",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-03-07",
+    "valueDate": "2025-03-07",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "41675",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-03-07T04:50:51Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af679581737901959373d8d54576",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5922035030",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 PAYOO-BACH HOA XANH",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-03-02",
+    "valueDate": "2025-03-02",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "223444",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-03-02T10:30:39Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af679581737901959373d8d54575",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5921119185",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 Foody",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-03-02",
+    "valueDate": "2025-03-02",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "111000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-03-02T05:05:11Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af67953959580195451546ab775e",
+    "arrangementId": "75998b5d-677e-45f7-901e-425f37622310",
+    "reference": "FT25058490606000\\BNK",
+    "description": "Thanh toan no the tin dung - So tien 7016867 VND - Ngay 27/02/2025",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "bookingDate": "2025-02-27",
+    "valueDate": "2025-02-27",
+    "creditDebitIndicator": "CRDT",
+    "transactionAmountCurrency": {
+      "amount": "7016867",
+      "currencyCode": "VND"
+    },
+    "counterPartyName": "TRAN PHAN THANH LONG",
+    "counterPartyAccountNumber": "19037346123011",
+    "counterPartyBankName": "Techcombank",
+    "runningBalance": -90000,
+    "additions": {
+      "creditBank": "Techcombank",
+      "accountDebitName": "VND-TGTT-TRAN PHAN THANH LONG",
+      "externalId": "C-19737346123013-208780201331560.030001",
+      "debitBank": "Techcombank",
+      "accountNoOth": "0858267296",
+      "creditAcctName": "TRAN PHAN THANH LONG",
+      "debitAcctName": "TRAN PHAN THANH LONG",
+      "creditAcctNo": "19737346123013",
+      "additionalInfo": "{\"PAY.DETAILS\":\"Thanh toan no the tin dung - So*tien 7016867 VND - Ngay 27/02/2025\"}",
+      "debitAcctNo": "19037346123011",
+      "creditCate": "1601",
+      "debitCate": "1001",
+      "accountCreditName": "VND-VCR-TRAN PHAN THANH LONG"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-27T08:46:00+07:00",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af67953959580195451546ab775f",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5906100298",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 PAYOO-BACH HOA XANH",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-25",
+    "valueDate": "2025-02-25",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "350000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-25T11:55:29Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af67953959580195451546ab7760",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5898135790",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 MOCA CREDIT",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-23",
+    "valueDate": "2025-02-23",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "20000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-23T04:36:35Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c0af67953959580195451546ab7761",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5890980525",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 MOCA CREDIT",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-21",
+    "valueDate": "2025-02-21",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "70000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-21T02:35:22Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77e9e",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5879859473",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 PAYOO-BACH HOA XANH",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-17",
+    "valueDate": "2025-02-17",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "250000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-17T11:44:46Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77ea8",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5872529431",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 PAYOO-BACH HOA XANH",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-15",
+    "valueDate": "2025-02-15",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "390000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-15T06:27:03Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77eab",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5856762306",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 VNPAY*CKKPDL",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-10",
+    "valueDate": "2025-02-10",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "1508760",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-10T13:53:01Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77ea4",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5853557131",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 Shopee",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-09",
+    "valueDate": "2025-02-09",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "217900",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-09T17:21:40Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77eaf",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5843974431",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 Foody",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-06",
+    "valueDate": "2025-02-06",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "100400",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-06T12:49:44Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77ea1",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5840757822",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 Shopee",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-05",
+    "valueDate": "2025-02-05",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "297100",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-05T14:36:35Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77ea2",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5835252946",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 MOCA CREDIT",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-04",
+    "valueDate": "2025-02-04",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "57550",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-04T07:21:01Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77e9f",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5826386360",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 Foody",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-01",
+    "valueDate": "2025-02-01",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "103000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-01T06:13:11Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77ead",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5826383857",
+    "description": "Giao dich hoan tra/revert - So The/Card No:...5932 Foody",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "bookingDate": "2025-02-01",
+    "valueDate": "2025-02-01",
+    "creditDebitIndicator": "CRDT",
+    "transactionAmountCurrency": {
+      "amount": "1000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-01T06:11:45Z",
+    "state": "COMPLETED"
+  },
+  {
+    "id": "e4c08157951552bd01951914eff77ea7",
+    "arrangementId": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "reference": "5826383799",
+    "description": "Giao dich thanh toan/Purchase - So The/Card No:...5932 Foody",
+    "typeGroup": "OTHERS",
+    "type": "CREDIT CARD",
+    "category": "Spending",
+    "bookingDate": "2025-02-01",
+    "valueDate": "2025-02-01",
+    "creditDebitIndicator": "DBIT",
+    "transactionAmountCurrency": {
+      "amount": "1000",
+      "currencyCode": "VND"
+    },
+    "checkImageAvailability": "UNAVAILABLE",
+    "creationTime": "2025-02-01T06:11:43Z",
+    "state": "COMPLETED"
+  }
+]

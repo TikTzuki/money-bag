@@ -65,9 +65,9 @@ data class AccountDto(
 //    val productKind: ProductKind
 //)
 
-data class ProductKind(
-    val id: Int,
-    val externalKindId: String,
-    val kindName: String,
-    val kindUri: String
-)
+//data class ProductKind(
+//    val id: Int,
+//    val externalKindId: String,
+//    val kindName: String,
+//    val kindUri: String
+//)

@@ -1,4 +1,4 @@
-package org.tiktuzki.moneybag.banking.tcb
+package org.tiktuzki.moneybag.banking.client
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -6,8 +6,13 @@ import mu.KLogging
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import okhttp3.Response
 import org.springframework.stereotype.Component
-import org.tiktuzki.moneybag.banking.*
+import org.tiktuzki.moneybag.banking.BakingCard
+import org.tiktuzki.moneybag.banking.Bank
+import org.tiktuzki.moneybag.banking.BankingClient
+import org.tiktuzki.moneybag.banking.TokenCredential
+import org.tiktuzki.moneybag.banking.entities.FinanceAccount
 import org.tiktuzki.moneybag.globalscheduler.GlobalScheduler
 import org.tiktuzki.moneybag.user.UserRepository
 import java.time.Duration
@@ -20,7 +25,11 @@ class TCBClientImpl(
     val mapper: ObjectMapper
 ) : BankingClient {
 
-    override fun login(userId: String, username: String, password: String) {
+    override fun getBank(): Bank {
+        return Bank.TCB;
+    }
+
+    override fun login(userId: String, username: String, password: String): TokenCredential {
         logger.info("Logging in with $username and $password")
         val tokenCredential = authenticator.login(userId, username, password)
         userRepository.setBankSession(userId, Bank.TCB, tokenCredential)
@@ -43,6 +52,7 @@ class TCBClientImpl(
                 globalScheduler.removeTask("Refresh TCB $username Token")
             }
         }
+        return tokenCredential
     }
 
     override fun getCards(userId: String): List<BakingCard> {
@@ -50,9 +60,17 @@ class TCBClientImpl(
         return emptyList()
     }
 
-    fun getArrangement(userId: String) {
+    override fun getBankAccounts(userId: String): List<FinanceAccount> {
+        val accountsTypeRef = object : TypeReference<List<FinanceAccount>>() {}
+        val currentAccount = "Current Account"
+        getArrangement(userId, currentAccount).use { response ->
+            return mapper.readValue(response.body!!.string(), accountsTypeRef)
+        }
+    }
+
+    fun getArrangement(userId: String, productKindName: String = "Current Account"): Response {
         val path = "/api/arrangement-manager/client-api/v2/productsummary/context/arrangements"
-        val token = userRepository.getUserToken(userId, Bank.TCB).accessToken
+        val token = userRepository.getUserToken(userId, Bank.TCB)!!.accessToken
         val client = OkHttpClient.Builder()
             .addInterceptor { chain ->
                 chain.proceed(
@@ -68,21 +86,13 @@ class TCBClientImpl(
             .addQueryParameter("businessFunction", "Product Summary")
             .addQueryParameter("resourceName", "Product Summary")
             .addQueryParameter("privilege", "view")
-//            .addQueryParameter("productKindName", "Current Account")
+            .addQueryParameter("productKindName", productKindName)
             .addQueryParameter("size", "1000000")
             .build()
         val request = Request.Builder()
             .url(url)
             .build()
-        val accountsTypeRef = object : TypeReference<List<AccountDto>>() {}
-        client.newCall(request).execute()
-            .use { response ->
-                if (!response.isSuccessful) {
-                    throw RuntimeException("Unexpected code $response")
-                }
-                val accounts = mapper.readValue(response.body!!.bytes(), accountsTypeRef)
-                logger.info { accounts }
-            }
+        return client.newCall(request).execute()
     }
 
     companion object : KLogging() {

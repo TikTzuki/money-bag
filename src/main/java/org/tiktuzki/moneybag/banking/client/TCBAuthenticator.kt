@@ -1,4 +1,4 @@
-package org.tiktuzki.moneybag.banking.tcb
+package org.tiktuzki.moneybag.banking.client
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper

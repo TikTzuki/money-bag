@@ -29,8 +29,8 @@ class UserRepository(
         userRepos.save(UserTbl(null, userId, "", "", "", "", "", "", "", "", ""))
     }
 
-    fun getUserToken(userId: String, bank: Bank): TokenCredential {
-        return users[userId]?.bankSessions?.get(bank)?.token ?: throw RuntimeException("User not logged in")
+    fun getUserToken(userId: String, bank: Bank): TokenCredential? {
+        return users[userId]?.bankSessions?.get(bank)?.token
     }
 
     fun setBankSession(userId: String, bank: Bank, token: TokenCredential?) {

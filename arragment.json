@@ -1,0 +1,291 @@
+[
+  {
+    "additions": {
+      "rollover": "Rollover principal and interest",
+      "allowWithdraw": "Y",
+      "currentAccuredInterest": "59000"
+    },
+    "id": "facf24b4-3532-4e09-b4bd-699e51585608",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "SAN PHAM TIEN GUI PHAT LOC ONLINE",
+    "BBAN": "14602539700548",
+    "currency": "VND",
+    "productKindName": "Term Deposit",
+    "productTypeName": "Phat Loc online",
+    "bookedBalance": 10000000,
+    "availableBalance": 10000000,
+    "accruedInterest": 90000,
+    "principalAmount": 10000000,
+    "productId": "55ef12e6-75b7-4eaa-b70b-f4f12aefb6a7",
+    "visible": true,
+    "accountOpeningDate": "2025-01-24T00:00:00Z",
+    "accountInterestRate": 3.65,
+    "termUnit": "M",
+    "termNumber": 3,
+    "maturityDate": "2025-04-24T00:00:00Z",
+    "interestSettlementAccount": "19037346123011",
+    "accountHolderNames": "",
+    "favorite": false,
+    "product": {
+      "externalId": "3017-184013",
+      "externalTypeId": "184013",
+      "typeName": "Phat Loc online",
+      "productKind": {
+        "id": 6,
+        "externalKindId": "kind6",
+        "kindName": "Term Deposit",
+        "kindUri": "term-deposit"
+      }
+    },
+    "displayName": "SAN PHAM TIEN GUI PHAT LOC ONLINE",
+    "debitCards": []
+  },
+
+  {
+    "additions": {
+      "rollover": "Rollover principal and interest",
+      "allowWithdraw": "Y",
+      "currentAccuredInterest": "16520"
+    },
+    "id": "9776afb9-826c-4487-a33d-5843683f3ffe",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "SAN PHAM TIEN GUI PHAT LOC ONLINE",
+    "BBAN": "14602548655865",
+    "currency": "VND",
+    "productKindName": "Term Deposit",
+    "productTypeName": "Phat Loc online",
+    "bookedBalance": 10000000,
+    "availableBalance": 10000000,
+    "accruedInterest": 30288,
+    "principalAmount": 10000000,
+    "productId": "55ef12e6-75b7-4eaa-b70b-f4f12aefb6a7",
+    "visible": true,
+    "accountOpeningDate": "2025-03-06T00:00:00Z",
+    "accountInterestRate": 3.35,
+    "termUnit": "M",
+    "termNumber": 1,
+    "maturityDate": "2025-04-08T00:00:00Z",
+    "interestSettlementAccount": "19037346123011",
+    "accountHolderNames": "",
+    "favorite": false,
+    "product": {
+      "externalId": "3017-184013",
+      "externalTypeId": "184013",
+      "typeName": "Phat Loc online",
+      "productKind": {
+        "id": 6,
+        "externalKindId": "kind6",
+        "kindName": "Term Deposit",
+        "kindUri": "term-deposit"
+      }
+    },
+    "displayName": "SAN PHAM TIEN GUI PHAT LOC ONLINE",
+    "debitCards": []
+  },
+
+  {
+    "additions": {
+      "rollover": "Rollover principal and interest",
+      "allowWithdraw": "Y",
+      "currentAccuredInterest": "76438"
+    },
+    "id": "6bcd4299-915e-427f-bd5e-3c4e9fd1516a",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "SAN PHAM TIEN GUI PHAT LOC ONLINE",
+    "BBAN": "14602539429933",
+    "currency": "VND",
+    "productKindName": "Term Deposit",
+    "productTypeName": "Phat Loc online",
+    "bookedBalance": 10000000,
+    "availableBalance": 10000000,
+    "accruedInterest": 230589,
+    "principalAmount": 10000000,
+    "productId": "55ef12e6-75b7-4eaa-b70b-f4f12aefb6a7",
+    "visible": true,
+    "accountOpeningDate": "2025-01-23T00:00:00Z",
+    "accountInterestRate": 4.65,
+    "termUnit": "M",
+    "termNumber": 6,
+    "maturityDate": "2025-07-23T00:00:00Z",
+    "interestSettlementAccount": "19037346123011",
+    "accountHolderNames": "",
+    "favorite": false,
+    "product": {
+      "externalId": "3017-184013",
+      "externalTypeId": "184013",
+      "typeName": "Phat Loc online",
+      "productKind": {
+        "id": 6,
+        "externalKindId": "kind6",
+        "kindName": "Term Deposit",
+        "kindUri": "term-deposit"
+      }
+    },
+    "displayName": "SAN PHAM TIEN GUI PHAT LOC ONLINE",
+    "debitCards": []
+  },
+  {
+    "additions": {
+      "caWorkingBalance": "15110246",
+      "maxAcctBalance": "0",
+      "maxAccountType": "AE.PLUS",
+      "caActualBalance": "15110246",
+      "alias": "TIKTUZKI"
+    },
+    "id": "57f462af-a70d-4ff7-a4f6-3a0e13f0de75",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "VND-TGTT-TRAN PHAN THANH LONG",
+    "BBAN": "19037346123011",
+    "currency": "VND",
+    "productKindName": "Current Account",
+    "productTypeName": "Current Account",
+    "bankBranchCode": "VN0010033",
+    "creditAccount": true,
+    "debitAccount": true,
+    "userPreferences": {
+      "visible": false,
+      "favorite": true
+    },
+    "bookedBalance": 15110246,
+    "availableBalance": 15110246,
+    "creditLimit": 0,
+    "productId": "884d3580-9e0b-4cf9-9862-ae13a4a23e41",
+    "visible": true,
+    "accountOpeningDate": "2021-07-27T00:00:00Z",
+    "accountHolderNames": "TRAN PHAN THANH LONG",
+    "favorite": true,
+    "product": {
+      "externalId": "1001",
+      "externalTypeId": "1001",
+      "typeName": "Current Account",
+      "productKind": {
+        "id": 1,
+        "externalKindId": "kind1",
+        "kindName": "Current Account",
+        "kindUri": "current-account"
+      }
+    },
+    "displayName": "VND-TGTT-TRAN PHAN THANH LONG",
+    "debitCards": []
+  },
+  {
+    "additions": {
+      "cardIcCard": "2434781854",
+      "cardIsSupplementary": "N",
+      "guid": "2912DA45D12502E2E0630A64643ADFE9",
+      "branch": "VN0010396",
+      "cardStatus": "5",
+      "cardDisplayDefault": "Y"
+    },
+    "id": "f17e52a9-06cf-40ec-94df-13b94d899f02",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "--TRAN P THANH LONG",
+    "BBAN": "19737346123013",
+    "currency": "VND",
+    "number": "403280XXXXXX5932",
+    "productKindName": "Credit Card",
+    "productTypeName": "Credit card",
+    "bankBranchCode": "VN0010396",
+    "creditLimit": 68000000,
+    "productId": "26e4a0f4-d4f7-4ba4-bac3-460268066b9a",
+    "visible": true,
+    "creditCardAccountNumber": "19737346123013",
+    "outstandingPayment": 0,
+    "accountHolderNames": "--TRAN P THANH LONG",
+    "favorite": false,
+    "product": {
+      "externalId": "1601",
+      "externalTypeId": "1601",
+      "typeName": "Credit card",
+      "productKind": {
+        "id": 4,
+        "externalKindId": "kind4",
+        "kindName": "Credit Card",
+        "kindUri": "credit-card"
+      }
+    },
+    "parentId": "75998b5d-677e-45f7-901e-425f37622310",
+    "displayName": "--TRAN P THANH LONG",
+    "debitCards": []
+  },
+  {
+    "additions": {
+      "cardIcCard": "2218977239",
+      "cardIsSupplementary": "N",
+      "guid": "E3478AFB14234D3CE0530A6464B2F024",
+      "branch": "VN0010396",
+      "cardStatus": "6"
+    },
+    "id": "4b4cd16a-07b8-44b7-844c-ec6eca1e2a73",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "--TRAN P THANH LONG",
+    "BBAN": "19737346123013",
+    "currency": "VND",
+    "number": "422075XXXXXX4098",
+    "productKindName": "Credit Card",
+    "productTypeName": "Credit card",
+    "bankBranchCode": "VN0010396",
+    "creditLimit": 49000000,
+    "productId": "26e4a0f4-d4f7-4ba4-bac3-460268066b9a",
+    "visible": true,
+    "creditCardAccountNumber": "19737346123013",
+    "outstandingPayment": 0,
+    "accountHolderNames": "--TRAN P THANH LONG",
+    "favorite": false,
+    "product": {
+      "externalId": "1601",
+      "externalTypeId": "1601",
+      "typeName": "Credit card",
+      "productKind": {
+        "id": 4,
+        "externalKindId": "kind4",
+        "kindName": "Credit Card",
+        "kindUri": "credit-card"
+      }
+    },
+    "parentId": "75998b5d-677e-45f7-901e-425f37622310",
+    "displayName": "--TRAN P THANH LONG",
+    "debitCards": []
+  },
+  {
+    "id": "75998b5d-677e-45f7-901e-425f37622310",
+    "legalEntityIds": [
+      "8a008e957c5ec3ff017c6c1053297496"
+    ],
+    "name": "--TRAN P THANH LONG",
+    "BBAN": "19737346123013",
+    "currency": "VND",
+    "productKindName": "Credit Card",
+    "productTypeName": "Credit card",
+    "productId": "26e4a0f4-d4f7-4ba4-bac3-460268066b9a",
+    "visible": true,
+    "outstandingPayment": 0.00000,
+    "accountHolderNames": "--TRAN P THANH LONG",
+    "favorite": false,
+    "product": {
+      "externalId": "1601",
+      "externalTypeId": "1601",
+      "typeName": "Credit card",
+      "productKind": {
+        "id": 4,
+        "externalKindId": "kind4",
+        "kindName": "Credit Card",
+        "kindUri": "credit-card"
+      }
+    },
+    "displayName": "--TRAN P THANH LONG",
+    "debitCards": []
+  }
+]
