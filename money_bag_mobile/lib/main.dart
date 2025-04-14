@@ -15,7 +15,10 @@ class MainApp extends StatefulWidget {
     return _MainAppState();
   }
 }
-
+var kDarkColorScheme = ColorScheme.fromSeed(
+  brightness: Brightness.dark,
+  seedColor: const Color.fromRGBO(27, 27, 47, 1),
+);
 class AppTheme {
   static const Color primaryColor = Color.fromRGBO(22, 36, 71, 1);
   static const Color secondaryColor = Color.fromRGBO(31, 64, 104, 1);
@@ -43,6 +46,26 @@ class AppTheme {
         style: OutlinedButton.styleFrom(
           foregroundColor: Colors.white,
           backgroundColor: accentColor,
+        ),
+      ),
+    );
+  }
+
+  static ThemeData get darkTheme {
+    return ThemeData.dark().copyWith(
+      useMaterial3: true,
+      colorScheme: kDarkColorScheme,
+      cardTheme: const CardTheme().copyWith(
+        color: kDarkColorScheme.secondaryContainer,
+        margin: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 8,
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: kDarkColorScheme.primaryContainer,
+          foregroundColor: kDarkColorScheme.onPrimaryContainer,
         ),
       ),
     );
@@ -79,6 +102,7 @@ class _MainAppState extends State<MainApp> {
     var body = activeApp == "home" ? Home(switchActivity) : apps[activeApp]!();
     return MaterialApp(
       theme: AppTheme.theme,
+      darkTheme: ThemeData.dark().copyWith(),
       home: Scaffold(
         appBar: AppBar(
           title: Text(activeApp),

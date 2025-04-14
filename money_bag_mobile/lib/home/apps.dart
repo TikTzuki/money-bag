@@ -1,3 +1,4 @@
+import 'package:money_bag_mobile/chart/chart_app.dart';
 import 'package:money_bag_mobile/dice/gradient_container.dart';
 import 'package:money_bag_mobile/quiz/quiz_app.dart';
 
@@ -18,6 +19,14 @@ var applications = [
     icon: 'assets/icons/rune-stone.png',
     constructor: () {
       return QuizApp(() {});
+    },
+  ),
+  AppModel(
+    appId: 'chart',
+    appName: 'Chart',
+    icon: 'assets/icons/chart.png',
+    constructor: () {
+      return ChartApp();
     },
   ),
 ];
