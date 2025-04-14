@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:money_bag_mobile/dice/gradient_container.dart';
-import 'package:money_bag_mobile/quiz/quiz_app.dart';
+import 'package:money_bag_mobile/home/apps.dart';
+
+import 'home/home.dart';
 
 void main() {
   runApp(MainApp());
@@ -15,38 +16,83 @@ class MainApp extends StatefulWidget {
   }
 }
 
-class _MainAppState extends State<MainApp> {
-  var activeActivity = "quiz-app";
+class AppTheme {
+  static const Color primaryColor = Color.fromRGBO(22, 36, 71, 1);
+  static const Color secondaryColor = Color.fromRGBO(31, 64, 104, 1);
+  static const Color backgroundColor = Color.fromRGBO(27, 27, 47, 1);
+  static const Color accentColor = Color.fromRGBO(228, 63, 90, 1);
 
-  Map<String, Function> activities = {};
+  static ThemeData get theme {
+    return ThemeData(
+      primaryColor: primaryColor,
+      scaffoldBackgroundColor: backgroundColor,
+      appBarTheme: AppBarTheme(
+        backgroundColor: primaryColor,
+        foregroundColor: Colors.white,
+      ),
+      textTheme: const TextTheme(
+        bodyLarge: TextStyle(color: Colors.white),
+        bodyMedium: TextStyle(color: Colors.white),
+        bodySmall: TextStyle(color: Colors.white),
+      ),
+      buttonTheme: ButtonThemeData(
+        buttonColor: accentColor,
+        textTheme: ButtonTextTheme.primary,
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: accentColor,
+        ),
+      ),
+    );
+  }
+}
+
+class _MainAppState extends State<MainApp> {
+  String activeApp = "home";
+
+  Map<String, Function> apps = {};
 
   void switchActivity(String activity) {
     setState(() {
-      activeActivity = activity;
+      activeApp = activity;
     });
   }
 
-  Widget buildDiceRoller() {
-    return GradientContainer.purple(() {
-      switchActivity("quiz-app");
-    });
-  }
-
-  Widget buildQuiz() {
-    return QuizApp(() {
-      switchActivity("quiz-app");
+  void backToHome() {
+    setState(() {
+      activeApp = "home";
     });
   }
 
   @override
   void initState() {
-    activities = {"dice-roller": buildDiceRoller, "quiz-app": buildQuiz};
+    for (var item in applications) {
+      apps[item.appId] = item.constructor;
+    }
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(body: activities[activeActivity]!()));
+    var body = activeApp == "home" ? Home(switchActivity) : apps[activeApp]!();
+    return MaterialApp(
+      theme: AppTheme.theme,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(activeApp),
+          leading:
+              activeApp != "home"
+                  ? IconButton(
+                    icon: const Icon(Icons.arrow_back),
+                    onPressed: backToHome,
+                  )
+                  : null,
+        ),
+        body: body,
+      ),
+    );
   }
 
   @override

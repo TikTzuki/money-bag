@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class DiceRoller extends StatefulWidget {
-  const DiceRoller(this.switchActivity, {super.key});
+  const DiceRoller(this.backToHome, {super.key});
 
-  final Function switchActivity;
+  final Function backToHome;
 
   @override
   State<DiceRoller> createState() {
@@ -31,19 +31,13 @@ class _DiceRollerState extends State<DiceRoller> {
       children: [
         Image.asset(activeDice, width: 200),
         const SizedBox(height: 10),
-        TextButton(
+        OutlinedButton(
           onPressed: rollDice,
           style: TextButton.styleFrom(
             foregroundColor: Colors.white,
             textStyle: const TextStyle(fontSize: 28),
           ),
           child: const Text("Roll Dice"),
-        ),
-        OutlinedButton(
-          onPressed: () {
-            widget.switchActivity();
-          },
-          child: Text("switch"),
         ),
       ],
     );

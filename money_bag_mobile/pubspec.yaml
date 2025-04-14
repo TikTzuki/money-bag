@@ -64,6 +64,9 @@ flutter:
     - assets/images/dices/dice-4.png
     - assets/images/dices/dice-5.png
     - assets/images/dices/dice-6.png
+    - assets/icons/chart.png
+    - assets/icons/rolling-dices.png
+    - assets/icons/rune-stone.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
