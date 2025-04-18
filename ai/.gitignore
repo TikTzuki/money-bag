@@ -49,3 +49,4 @@ htmlcov/
 *.cache
 *.pkl
 *.pickle
+*.iml
