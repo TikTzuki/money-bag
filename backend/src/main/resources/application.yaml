@@ -17,7 +17,7 @@ spring:
     web-application-type: servlet
   ai:
     openai:
-      api-key: sk-033969b6f9f14cf0903a294deec5103d
+      api-key: sk-033969b6f9f14cf0903a294deec5103c
 #      chat:
 #        options:
 #          model: deepseek-reasoner

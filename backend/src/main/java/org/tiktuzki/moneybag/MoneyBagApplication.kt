@@ -1,20 +1,17 @@
 package org.tiktuzki.moneybag
 
+//import org.springframework.ai.ollama.OllamaChatModel
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonDeserializer
 import com.fasterxml.jackson.databind.JsonNode
 import org.springframework.ai.chat.client.ChatClient
-import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor
-import org.springframework.ai.chat.memory.ChatMemory
-import org.springframework.ai.chat.memory.InMemoryChatMemory
-import org.springframework.ai.chat.model.ChatModel
-//import org.springframework.ai.ollama.OllamaChatModel
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.context.annotation.Bean
 import org.springframework.stereotype.Component
+import org.tiktuzki.moneybag.ai.DeepSeekModelOutputConverter
+import java.util.*
 
 
 @SpringBootApplication
@@ -36,9 +33,15 @@ class MyCommandLineRunner(
 ) : CommandLineRunner {
 
     override fun run(vararg args: String?) {
-        val res= chatClient.prompt()
+        val chatId = UUID.randomUUID().toString()
+        val res = chatClient.prompt()
             .user("hello")
+            .advisors { advisorSpec ->
+                advisorSpec
+                    .param("chat_memory_conversation_id", chatId)
+            }
             .call()
+            .entity(DeepSeekModelOutputConverter ())
         println(res)
     }
 }
