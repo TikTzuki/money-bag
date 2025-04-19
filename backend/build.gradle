@@ -24,6 +24,10 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    set('springAiVersion', "1.0.0-M7")
+}
+
 dependencies {
 //    implementation "org.springframework.boot:spring-boot-starter-webflux"
 //    implementation "org.springdoc:springdoc-openapi-starter-webflux-ui:2.8.5"
@@ -49,9 +53,20 @@ dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:4.29.0"
     testImplementation "org.junit.jupiter:junit-jupiter-engine:5.12.0"
     implementation "io.github.microutils:kotlin-logging-jvm:3.0.5"
-
+//    implementation 'org.javallm:llama4j:0.0.1'
+//    implementation 'dev.langchain4j:langchain4j-open-ai:1.0.0-beta3'
+//    implementation 'dev.langchain4j:langchain4j:1.0.0-beta3'
+//    implementation "org.springframework.ai:spring-ai-starter-model-ollama"
+//    implementation 'org.springframework.ai:spring-ai-anthropic-spring-boot-starter:1.0.0-M6'
+//    implementation 'org.springframework.ai:spring-ai-mcp-client-spring-boot-starter:1.0.0-M6'
+    implementation 'org.springframework.ai:spring-ai-openai-spring-boot-starter:1.0.0-M6'
+    implementation 'de.kherud:llama:4.1.0'
 }
-
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.ai:spring-ai-bom:${springAiVersion}"
+    }
+}
 kotlin {
     compilerOptions {
         freeCompilerArgs.addAll "-Xjsr305=strict"

@@ -1,0 +1,4 @@
+fastapi==0.115.12
+gpt4all==2.8.2
+uvicorn==0.34.1
+llama_cpp_python==0.3.8
